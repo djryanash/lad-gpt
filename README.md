@@ -74,11 +74,15 @@ Once input data is in place, the chats need to be encoded into numerical tensors
 ```
 python run.py preprocess
 ```
-To train a language model from scratch and solely based on the encoded chat data. Set <code>--update</code> in case you want to continue training an already model.
+To train a language model from scratch and solely based on the encoded chat data. 
+```
+python run.py train
+```
+If you have already trained a model and would like to update it instead, set <code>--update</code>.
 ```
 python run.py train --update
 ```
-To initiale a chat with the trained model:
+To initiate a chat with the trained model:
 ```
 python run.py chat
 ```
